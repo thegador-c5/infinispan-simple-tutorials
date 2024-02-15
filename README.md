@@ -43,3 +43,18 @@ Use the OpenShift web console, "Networking -> Routes" to obtain the route. For e
 Click on the "Open the console" button.
 
 Authenticate using the "developer" user and password obtained earlier.
+
+## References
+> https://infinispan.org/get-started/
+
+> https://infinispan.org/tutorials/simple/simple_tutorials.html
+
+> https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.1/html-single/running_data_grid_on_openshift/index#exposing_routes-access
+
+> https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.4
+
+> https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.4/html/data_grid_operator_guide/configuring-authentication#default-credentials_authn
+
+> https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.1/html-single/running_data_grid_on_openshift/index#exposing_routes-access
+
+> https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.4/html/hot_rod_java_client_guide/index 
