@@ -34,6 +34,7 @@ Data Grid creates a secret to store the "developer" user credential.
 > oc get secret example-infinispan-generated-secret -n openshift-operators -o jsonpath="{.data.identities\.yaml}" | base64 --decode
 
 Example response:
+
 - username: developer
   password: eQWIAItdhDGHWgqG
   roles:
