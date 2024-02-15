@@ -59,4 +59,6 @@ Authenticate using the "developer" user and password obtained earlier.
 
 > https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.4/html/hot_rod_java_client_guide/index
 
-> https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.4/html-single/data_grid_server_guide/index#opentelemetry-tracing 
+> https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.4/html-single/data_grid_server_guide/index#opentelemetry-tracing
+
+> https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.1/html/running_data_grid_on_openshift/connecting_clients 
