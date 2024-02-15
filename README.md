@@ -27,6 +27,9 @@ Use the OpenShift web console, Installed Operators -> Data Grid -> Infinispan Cl
 > Specify "route" as the method of access
 
 ## Obtain the password for the "developer" user
+Log in to the OpenShift cluster using the OpenShift CLI.
+> oc login -u kubeadmin https://api.cluster-5pltp.5pltp.sandbox1298.opentlc.com:6443/
+
 Data Grid creates a secret to store the "developer" user credential. 
 > oc get secret example-infinispan-generated-secret -n openshift-operators -o jsonpath="{.data.identities\.yaml}" | base64 --decode
 
