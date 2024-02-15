@@ -17,4 +17,9 @@ In a browser, navigate to http://localhost:11222/console
 ## Run the remote cache example
 > cd infinispan-remote/cache
 
+## Install the Data Grid operator on OpenShift
+Use the OpenShift web console Administrator view to install the Data Grid operator.
+
+## Create a Data Grid cluster on OpenShift
+Use the OpenShift web console, Installed Operators -> Data Grid -> Infinispan Clusters -> Create Infinispan to create the cluster.
 > mvn exec:exec
