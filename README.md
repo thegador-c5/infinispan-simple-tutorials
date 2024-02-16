@@ -36,7 +36,9 @@ Data Grid creates a secret to store the "developer" user credential.
 Example response:
 
 - username: developer
+
   password: eQWIAItdhDGHWgqG
+  
   roles:
   - admin
   - controlRole
@@ -47,6 +49,16 @@ Use the OpenShift web console, "Networking -> Routes" to obtain the route. For e
 Click on the "Open the console" button.
 
 Authenticate using the "developer" user and password obtained earlier.
+
+## Obtain the Data Grid cluster certificate
+
+> oc get secret example-infinispan-cert-secret -o jsonpath='{.data.tls\.crt}' | base64 --decode > tls.crt
+
+## Obtain the DNS hostname service 
+
+> oc get service example-infinispan -o go-template --template='{{.metadata.name}}.{{.metadata.namespace}}.svc.cluster.local{{println}}'
+
+> example-infinispan.openshift-operators.svc.cluster.local
 
 ## References
 > https://infinispan.org/get-started/
@@ -68,3 +80,5 @@ Authenticate using the "developer" user and password obtained earlier.
 > https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.1/html/running_data_grid_on_openshift/connecting_clients
 
 > https://developers.redhat.com/articles/2022/05/31/integrate-spring-boot-application-red-hat-data-grid#
+
+> https://access.redhat.com/documentation/en-us/red_hat_data_grid/8.3/guide/d510c8ad-e097-4a3e-af55-e1d7967ecac3
